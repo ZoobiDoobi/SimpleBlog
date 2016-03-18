@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Web.Optimization;
+using SimpleBlog.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +15,7 @@ namespace SimpleBlog
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(System.Web.Optimization.BundleTable.Bundles);
         }
     }
 }
